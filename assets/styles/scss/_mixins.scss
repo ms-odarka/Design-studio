@@ -1,0 +1,13 @@
+@mixin Montserrat ($font-weight, $font-size, $line-height) {
+    font-family: "Montserrat";
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin Montserrat-Alternates ($font-weight, $font-size, $line-height) {
+    font-family: "Montserrat Alternates";
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
