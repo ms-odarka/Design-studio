@@ -3,14 +3,33 @@
 
 
 .header {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 27px;
+    margin-right: 27px;
+
 
     // .header__logo
 
-    &__logo {}
+    &__logo {
+        display: block;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: end;
+        width: 113px;
+        height: 18px;
+        background-image: url(/assets/images/logo.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
 
     // .header__desc
 
     &__desc {
+        grid-row: 3/3;
+        grid-column: 2/3;
+        justify-self: end;
         @include Montserrat-Alternates (400, 10px, 12px);
     }
 }
@@ -23,8 +42,7 @@
         display: flex; // используем flex для центрирования содержимого
         align-items: center; // центрируем содержимое кнопки 
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 16px;
         width: 26px;
         height: 26px;
         cursor: pointer;
@@ -68,7 +86,7 @@
         padding: 80px 0;
         list-style: none;
         text-align: center;
-        background-color: #ed0ec4;
+        background-color: $light-brown;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
         transition-duration: .25s;
     }
@@ -85,7 +103,7 @@
     }
 
     &__item:hover {
-        background-color: #dccfd2;
+        background-color: $white;
     }
 }
 
