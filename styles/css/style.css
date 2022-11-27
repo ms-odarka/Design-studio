@@ -17,6 +17,24 @@
   unicode-range: U+0020-2044;
 }
 @font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/assets/fonts/Montserrat Alternates Bold.eot");
+  src: url("/assets/fonts/Montserrat Alternates Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Montserrat Alternates Bold.woff2") format("woff2"), url("/assets/fonts/Montserrat Alternates Bold.woff") format("woff"), url("/assets/fonts/Montserrat Alternates Bold.ttf") format("truetype"), url("/assets/fonts/Montserrat Alternates Bold.svg#Montserrat Alternates Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/assets/fonts/Montserrat Alternates Regular.eot");
+  src: url("/assets/fonts/Montserrat Alternates Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Montserrat Alternates Regular.woff2") format("woff2"), url("/assets/fonts/Montserrat Alternates Regular.woff") format("woff"), url("/assets/fonts/Montserrat Alternates Regular.ttf") format("truetype"), url("/assets/fonts/Montserrat Alternates Regular.svg#Montserrat Alternates Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+@font-face {
   font-family: "Montserrat Alternates SemiBold";
   src: url("/assets/fonts/Montserrat Alternates SemiBold.eot");
   src: url("/assets/fonts/Montserrat Alternates SemiBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Montserrat Alternates SemiBold.woff2") format("woff2"), url("/assets/fonts/Montserrat Alternates SemiBold.woff") format("woff"), url("/assets/fonts/Montserrat Alternates SemiBold.ttf") format("truetype"), url("/assets/fonts/Montserrat Alternates SemiBold.svg#Montserrat Alternates SemiBold") format("svg");
@@ -34,21 +52,90 @@
   font-stretch: normal;
   unicode-range: U+0020-2044;
 }
-@font-face {
+.header__desc {
   font-family: "Montserrat Alternates";
-  src: url("/assets/fonts/Montserrat Alternates Regular.eot");
-  src: url("/assets/fonts/Montserrat Alternates Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Montserrat Alternates Regular.woff2") format("woff2"), url("/assets/fonts/Montserrat Alternates Regular.woff") format("woff"), url("/assets/fonts/Montserrat Alternates Regular.ttf") format("truetype"), url("/assets/fonts/Montserrat Alternates Regular.svg#Montserrat Alternates Regular") format("svg");
   font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2044;
+  font-size: 10px;
+  line-height: 12px;
 }
-@font-face {
+
+.hamburger-menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.hamburger-menu__btn > span, .hamburger-menu__btn > span::before, .hamburger-menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #262626;
+  transition-duration: 0.25s;
+}
+.hamburger-menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.hamburger-menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.hamburger-menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ed0ec4;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.25s;
+}
+.hamburger-menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
   font-family: "Montserrat Alternates";
-  src: url("/assets/fonts/Montserrat Alternates Bold.eot");
-  src: url("/assets/fonts/Montserrat Alternates Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Montserrat Alternates Bold.woff2") format("woff2"), url("/assets/fonts/Montserrat Alternates Bold.woff") format("woff"), url("/assets/fonts/Montserrat Alternates Bold.ttf") format("truetype"), url("/assets/fonts/Montserrat Alternates Bold.svg#Montserrat Alternates Bold") format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2044;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.hamburger-menu__item:hover {
+  background-color: #dccfd2;
+}
+
+#hamburger-menu__toggle {
+  opacity: 0;
+}
+
+#hamburger-menu__toggle:checked ~ .hamburger-menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#hamburger-menu__toggle:checked ~ .hamburger-menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#hamburger-menu__toggle:checked ~ .hamburger-menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#hamburger-menu__toggle:checked ~ .hamburger-menu__box {
+  visibility: visible;
+  left: 0;
 }
