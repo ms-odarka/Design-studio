@@ -7,11 +7,11 @@
         align-items: center;
         justify-content: center;
         height: 10vh;
+        background-color: $black;
     }
 
     .footer__container {
         text-align: center;
-        background-color: $black;
         color: $white;
         @include Montserrat-Alternates (500,15px,18px);
     }
@@ -24,11 +24,11 @@
         align-items: center;
         justify-content: center;
         height: 10vh;
+        background-color: $black;
     }
 
     .footer__container {
         text-align: center;
-        background-color: $black;
         color: $white;
         @include Montserrat-Alternates (500,11px,15px);
     }

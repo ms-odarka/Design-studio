@@ -163,21 +163,6 @@
     visibility: visible;
     left: 0;
   }
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-    background-color: #262626;
-  }
-  .footer__container {
-    text-align: center;
-    color: #FFFFFF;
-    font-family: "Montserrat Alternates";
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 15px;
-  }
 }
 @media (min-width: 1023px) {
   #header-menu__toggle {
@@ -282,6 +267,8 @@
     color: rgba(59, 59, 59, 0.5);
     text-align: center;
   }
+}
+@media screen and (min-width: 1024px) {
   .footer {
     display: flex;
     align-items: center;
@@ -298,3 +285,20 @@
     line-height: 18px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: #262626;
+  }
+  .footer__container {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
