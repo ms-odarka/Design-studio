@@ -226,6 +226,13 @@
   .header-menu__item:hover::after {
     opacity: 1;
   }
+  .header-menu__item:hover {
+    color: #BD7048;
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
   .header-info {
     grid-row: 1/2;
     grid-column: 3/4;
