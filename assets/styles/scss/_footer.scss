@@ -1,0 +1,35 @@
+@import './colors';
+@import '_mixins';
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+    }
+
+    .footer__container {
+        text-align: center;
+        background-color: $black;
+        color: $white;
+        @include Montserrat-Alternates (500,15px,18px);
+    }
+}
+
+@media screen and (max-width: 1023px){
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+    }
+
+    .footer__container {
+        text-align: center;
+        background-color: $black;
+        color: $white;
+        @include Montserrat-Alternates (500,11px,15px);
+    }
+}
