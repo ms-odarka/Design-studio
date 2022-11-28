@@ -10,7 +10,7 @@
         background-color: $black;
     }
 
-    .footer__container {
+    &__container {
         text-align: center;
         color: $white;
         @include Montserrat-Alternates (500,15px,18px);
@@ -27,7 +27,7 @@
         background-color: $black;
     }
 
-    .footer__container {
+    &__container {
         text-align: center;
         color: $white;
         @include Montserrat-Alternates (500,11px,15px);

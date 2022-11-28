@@ -301,4 +301,48 @@
     font-size: 11px;
     line-height: 15px;
   }
+  @media screen and (max-width: 1023px) {
+    .main__consultion-section {
+      background-image: url("/assets/styles/images/main_page.jpg");
+      display: grid;
+      grid-template-columns: 10% 1fr 10% ;
+      grid-template-rows: 1fr 1fr 40% ;
+        
+    }
+    .main__my-order-button {
+      grid-area: 1/1/2/4;
+      justify-self: end;
+      border-radius: 100px;
+      height: 58px;
+      width: 61px;
+      margin: 32px 5% 0px 0px;
+      background-color: #FDFDFD;
+      box-shadow: 0px 4px 36px
+      rgba(0, 0, 0, 0.05);
+      border-style: none
+    }
+    .main__consultion-section__text {
+      grid-area: 2/1/3/4;
+      font-family: "Montserrat Alternates";
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      color: #FFFFFF;
+
+    }
+    .consultation-button {
+      grid-area: 3/1/4/4;
+      justify-self: center;
+      background-color: #BD7048;
+      border-radius: 100px;
+      height: 74px;
+      width:228px;
+      font-family: "Montserrat Alternates";
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      border-style: none;
+      color: #FFFFFF;
+    }
+}
 }/*# sourceMappingURL=style.css.map */
