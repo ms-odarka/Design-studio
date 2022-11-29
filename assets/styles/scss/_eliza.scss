@@ -118,6 +118,7 @@ body{
   }
   .tab-content p {
     margin: 1em;
+    @include Montserrat-Alternates (500, 15px, 18px);
   }
   /* :checked */
   .tab input:checked ~ .tab-content {
