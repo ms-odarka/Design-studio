@@ -86,7 +86,7 @@
   .header-menu__btn {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 27px;
     width: 27px;
     height: 25px;
@@ -162,21 +162,6 @@
   #header-menu__toggle:checked ~ .header-menu__box {
     visibility: visible;
     left: 0;
-  }
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-    background-color: #262626;
-  }
-  .footer__container {
-    text-align: center;
-    color: #FFFFFF;
-    font-family: "Montserrat Alternates";
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 15px;
   }
 }
 @media (min-width: 1023px) {
@@ -282,19 +267,227 @@
     color: rgba(59, 59, 59, 0.5);
     text-align: center;
   }
+}
+@media (min-width: 1023px) {
   .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-    background-color: #262626;
-  }
-  .footer__container {
-    text-align: center;
-    color: #FFFFFF;
+    display: grid;
+    grid-template-rows: 1fr 1fr 95px;
+    grid-template-columns: auto;
+    justify-items: end;
+    margin-top: 55px;
+    padding-top: 30px;
     font-family: "Montserrat Alternates";
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
+    color: rgba(59, 59, 59, 0.5);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+  }
+  .footer-logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: start;
+    margin-left: 135px;
+  }
+  .footer-logo__img {
+    display: block;
+    grid-column: 2/3;
+    justify-self: end;
+    width: 113px;
+    height: 18px;
+    background-image: url(/assets/images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .footer-logo__desc {
+    font-family: "Montserrat Alternates";
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+  }
+  .footer-nav {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+  }
+  .footer-nav__link {
+    display: block;
+    color: rgba(59, 59, 59, 0.5);
+    text-decoration: none;
+    font-family: "Montserrat Alternates";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .footer-text {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: center;
+  }
+  .footer-text__privacy {
+    display: block;
+    color: rgba(59, 59, 59, 0.5);
+    text-decoration: none;
+    font-family: "Montserrat Alternates";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .footer-info {
+    grid-row: 1/2;
+    grid-column: 4/5;
+    margin-right: 135px;
+  }
+  .footer-info__btn {
+    position: absolute;
+    background-image: url(/assets/images/phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 24px;
+    height: 24px;
+    margin-left: -40px;
+  }
+  .footer-info__call {
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #262626;
+  }
+  .footer-info__time {
+    display: block;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(59, 59, 59, 0.5);
+    text-align: center;
+  }
+  .footer-content {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    justify-self: stretch;
+    background-color: #262626;
+    text-align: center;
+    margin: 0;
+  }
+  .footer-content__copy {
+    position: relative;
+    top: 40px;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 1023px) {
+  .footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(59, 59, 59, 0.5);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    height: 220px;
+    width: 100%;
+  }
+  .footer-logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-bottom: 10px;
+  }
+  .footer-logo__img {
+    display: block;
+    width: 113px;
+    height: 18px;
+    background-image: url(/assets/images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .footer-logo__desc {
+    font-family: "Montserrat Alternates";
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+  }
+  .footer-nav {
+    display: none;
+  }
+  .footer-text {
+    display: none;
+  }
+  .footer-info {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding-bottom: 10px;
+  }
+  .footer-info__btn {
+    position: absolute;
+    background-image: url(/assets/images/phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 24px;
+    height: 24px;
+    margin-left: -40px;
+  }
+  .footer-info__call {
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #262626;
+  }
+  .footer-info__time {
+    display: block;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(59, 59, 59, 0.5);
+    text-align: center;
+  }
+  .footer-content {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    text-align: center;
+    justify-self: stretch;
+    align-self: stretch;
+    background-color: #262626;
+    color: #FFFFFF;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .footer-content__copy {
+    display: block;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 110px;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 365px) {
+  .footer-info__btn {
+    display: none;
   }
 }

@@ -45,7 +45,7 @@
         &__btn {
             display: flex; // используем flex для центрирования содержимого
             align-items: center; // центрируем содержимое кнопки 
-            position: fixed;
+            position: absolute;
             top: 27px;
             width: 27px;
             height: 25px;
@@ -226,7 +226,6 @@
         // .header-info__btn
 
         &__btn {
-
             position: absolute;
             background-image: url(/assets/images/phone.svg);
             background-repeat: no-repeat;
