@@ -1,0 +1,247 @@
+@import './colors';
+@import './mixins';
+
+@media (min-width: 1023px) {
+
+    .footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 95px;
+        grid-template-columns: auto;
+        justify-items: end;
+        margin-top: 55px;
+        padding-top: 30px;
+        @include Montserrat-Alternates (500, 15px, 18px);
+        color: $light-black;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+
+    }
+
+    .footer-logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: start;
+        margin-left: 135px;
+        // .footer-logo__img
+
+        &__img {
+            display: block;
+            grid-column: 2/3;
+            justify-self: end;
+            width: 113px;
+            height: 18px;
+            background-image: url(/assets/images/logo.svg);
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+
+        // .footer-logo__desc
+
+        &__desc {
+            @include Montserrat-Alternates (400, 10px, 12px);
+            color: $dark-black;
+        }
+    }
+
+    .footer-nav {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        justify-self: center;
+
+        // .footer-nav__link
+
+        &__link {
+            display: block;
+            color: $light-black;
+            text-decoration: none;
+            @include Montserrat-Alternates (400, 15px, 18px);
+        }
+    }
+
+    .footer-text {
+        grid-row: 1/2;
+        grid-column: 3/4;
+        justify-self: center;
+        // .footer-text__privacy
+
+        &__privacy {
+            display: block;
+            color: $light-black;
+            text-decoration: none;
+            @include Montserrat-Alternates (400, 15px, 18px);
+        }
+    }
+
+    .footer-info {
+        grid-row: 1/2;
+        grid-column: 4/5;
+        margin-right: 135px;
+        // .footer-info__btn
+
+        &__btn {
+            position: absolute;
+            background-image: url(/assets/images/phone.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            transition: 0.2s;
+            width: 24px;
+            height: 24px;
+            margin-left: -40px;
+        }
+
+        // .footer-info__call
+
+        &__call {
+            @include Montserrat-Alternates (600, 15px, 18px);
+            color: $black;
+        }
+
+        // .footer-info__time
+
+        &__time {
+            display: block;
+            @include Montserrat-Alternates (500, 15px, 18px);
+            color: $light-black;
+            text-align: center;
+        }
+    }
+
+    .footer-content {
+        grid-row: 3/4;
+        grid-column: 1/5;
+        justify-self: stretch;
+        background-color: $black;
+        text-align: center;
+        margin: 0;
+        // .footer-content__copy
+
+        &__copy {
+            position: relative;
+            top: 40px;
+            @include Montserrat-Alternates (500, 15px, 18px);
+            color: $white;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 10px;
+        @include Montserrat-Alternates (500, 15px, 18px);
+        color: $light-black;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+        height: 220px;
+        width: 100%;
+    }
+
+    .footer-logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-bottom: 10px;
+
+        // .footer-logo__img
+
+        &__img {
+            display: block;
+            width: 113px;
+            height: 18px;
+            background-image: url(/assets/images/logo.svg);
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+
+        // .footer-logo__desc
+
+        &__desc {
+            @include Montserrat-Alternates (400, 10px, 12px);
+            color: $dark-black;
+        }
+    }
+
+
+    .footer-nav {
+        display: none;
+        // .footer-nav__link
+
+    }
+
+    .footer-text {
+        display: none;
+    }
+
+    .footer-info {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        padding-bottom: 10px;
+
+        // .footer-info__btn
+
+        &__btn {
+            position: absolute;
+            background-image: url(/assets/images/phone.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            transition: 0.2s;
+            width: 24px;
+            height: 24px;
+            margin-left: -40px;
+        }
+
+        // .footer-info__call
+
+        &__call {
+            @include Montserrat-Alternates (600, 15px, 18px);
+            color: $black;
+        }
+
+        // .footer-info__time
+
+        &__time {
+            display: block;
+            @include Montserrat-Alternates (500, 15px, 18px);
+            color: $light-black;
+            text-align: center;
+        }
+    }
+
+
+    .footer-content {
+
+        grid-row: 2/3;
+        grid-column: 1/3;
+        text-align: center;
+        justify-self: stretch;
+        align-self: stretch;
+        background-color: $black;
+        color: $white;
+        @include Montserrat-Alternates (500, 11px, 15px);
+        // .footer-content__copy
+
+        &__copy {
+            display: block;
+            @include Montserrat-Alternates (500, 15px, 110px);
+            color: $white;
+        }
+    }
+}
+
+@media (max-width:365px) {
+    .footer-info {
+        // .footer-info__btn
+
+        &__btn {
+            display: none;
+        }
+    }
+}

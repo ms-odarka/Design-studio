@@ -8,5 +8,97 @@
         <link rel="stylesheet" href="/styles/css/style.css" />
         <title>Главная</title>
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <a href="#" class="header__logo"></a>
+            <span class="header__desc">дизайн интерьеров</span>
+            <div class="header-menu">
+                <input id="header-menu__toggle" type="checkbox" />
+                <label class="header-menu__btn" for="header-menu__toggle">
+                    <span></span>
+                </label>
+                <nav class="header-menu__box">
+                    <a class="header-menu__item" href="#">Главная</a>
+                    <a class="header-menu__item" href="#">Каталог</a>
+                    <a class="header-menu__item" href="#">О нас</a>
+                    <a class="header-menu__item" href="#">Цены</a>
+                </nav>
+            </div>
+            <div class="header-info">
+                <button class="header-info__btn" type="button"></button>
+                <span class="header-info__call">+7 700 505 3000</span>
+                <span class="header-info__time">с 9:00 до 18:00</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="main__consultion-section">
+                <button class="main__my-order-button">
+                    <img src="assets/images/basket.svg" alt="basket" />
+                </button>
+                <p class="main__consultion-section__text">
+                    Дизайн-проект для вашей квартиры за 2 недели и 199 000 ₸
+                </p>
+                <button class="button consultation-button">Консультация</button>
+            </div>
+            <div class="main__conditions">
+                <div class="main__timeframes">
+                    <object data="assets/images/time.svg" type="image/svg+xml">
+                        <img src="assets/images/time.png" alt="time" />
+                    </object>
+                    <p class="main__conditions_emphasis">2 недели</p>
+                    <p>срок выполнения заказа</p>
+                </div>
+                <div class="main__price">
+                    <object data="assets/images/check.svg" type="image/svg+xml">
+                        <img src="assets/images/check.png" alt="check" />
+                    </object>
+                    <p class="main__conditions_emphasis">Не важно</p>
+                    <p>Сколько квадратов, цена - одна!</p>
+                </div>
+
+                <div class="main__installment-plan">
+                    <object
+                        data="assets/images/wallet.svg"
+                        type="image/svg+xml"
+                    >
+                        <img src="assets/images/wallet.png" alt="wallet" />
+                    </object>
+                    <p class="main__conditions_emphasis">Рассрочка</p>
+                    <p>до 24 месяцев</p>
+                    <a href=""
+                        ><img src="assets/images/kaspi.svg" alt="kaspi"
+                    /></a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-logo">
+                <a href="#" class="footer-logo__img"></a>
+                <span class="footer-logo__desc">дизайн интерьеров</span>
+            </div>
+            <div class="footer-nav">
+                <a href="#" class="footer-nav__link">Главная</a>
+                <a href="#" class="footer-nav__link">О нас</a>
+                <a href="#" class="footer-nav__link">Цены</a>
+            </div>
+            <div class="footer-text">
+                <a href="#" class="footer-text__privacy"
+                    >Политика конфиденциальности</a
+                >
+                <a href="#" class="footer-text__privacy">Условия пользования</a>
+            </div>
+            <div class="footer-info">
+                <button class="footer-info__btn" type="button"></button>
+                <span class="footer-info__call">+7 700 505 3000</span>
+                <span class="footer-info__time">с 9:00 до 18:00</span>
+            </div>
+            <div class="footer-content">
+                <span class="footer-content__copy"
+                    >(с) 2022. Все права защищены.</span
+                >
+            </div>
+        </footer>
+    </body>
 </html>
