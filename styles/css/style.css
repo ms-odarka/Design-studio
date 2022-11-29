@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat";
   src: url("/assets/fonts/Montserrat Regular.eot");
@@ -139,3 +140,189 @@
   visibility: visible;
   left: 0;
 }
+
+body {
+  width: 375px;
+}
+
+.our-styles__title {
+  font-family: "Montserrat Alternates";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.room__title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 10%;
+  margin-left: 7%;
+}
+
+.hallway {
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel, .slide {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.signature_slider {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.slider-title {
+  grid-column: 1/2;
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  align-self: center;
+  justify-self: center;
+}
+
+.slider-btn {
+  display: flex;
+  grid-column: 2/3;
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #BD7048;
+  background-color: #FAFAFA;
+  border-radius: 100px;
+  justify-content: end;
+  align-items: center;
+  width: 155px;
+  height: 46px;
+  border: none;
+}
+
+.slider-btn__text {
+  margin: 0 auto;
+}
+
+.styles-btn {
+  width: 285px;
+  height: 74px;
+  color: #FFFFFF;
+  background-color: #BD7048;
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  border-radius: 100px;
+  margin-left: 12%;
+  margin-top: 15%;
+  border: none;
+}
+
+.half {
+  width: 100%;
+  padding: 0 1em;
+  margin: 15% auto 0 auto;
+}
+
+.questions__title {
+  font-family: "Montserrat Alternates";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #262626;
+  margin: 0 auto;
+}
+
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  margin-top: 5%;
+  /*overflow: hidden;*/
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab label {
+  width: 90%;
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #FAFAFA;
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  line-height: 3;
+  color: #262626;
+  border-radius: 10%;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  color: #262626;
+  transition: max-height 0.35s;
+}
+
+.tab-content p {
+  margin: 1em;
+}
+
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+/* Icon */
+.tab label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  transition: all 0.35s;
+}
+
+.tab input[type=checkbox] + label::after {
+  content: "+";
+}
+
+.tab input[type=radio] + label::after {
+  content: "▼";
+  color: #BD7048;
+}
+
+.tab input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+  color: #BD7048;
+}
+
+.tab input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}/*# sourceMappingURL=style.css.map */

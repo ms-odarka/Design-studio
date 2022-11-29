@@ -1,0 +1,153 @@
+@import './colors';
+@import './mixins';
+
+body{
+    width: 375px; 
+}
+
+.our-styles__title{
+    @include Montserrat-Alternates (700, 25px, 30px);
+    text-align: center;
+    margin-top: 10%;
+    
+}
+.room__title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    @include Montserrat-Alternates (500, 20px, 30px);
+    margin-top: 10%;
+    margin-left: 7%;
+}
+.hallway{
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    justify-content: center;
+    align-items: center;
+}
+.carousel, .slide{
+    width: 95%;
+    margin: 0 auto;
+
+}
+.signature_slider{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.slider-title{
+    grid-column: 1/2;
+    @include Montserrat-Alternates (600, 20px, 24px);
+    align-self: center;
+    justify-self: center;
+}
+.slider-btn{
+    display: flex;
+    grid-column: 2/3;
+    @include Montserrat-Alternates (500, 15px, 18px);
+    color: $light-brown;
+    background-color:#FAFAFA;
+    border-radius: 100px;
+    justify-content: end;
+    align-items: center;
+    width: 155px;
+    height: 46px;
+    border: none;
+}
+.slider-btn__text{
+    margin: 0 auto;
+}
+.styles-btn{
+    width: 285px;
+    height: 74px;
+    color: #FFFFFF;
+    background-color: $light-brown;
+    @include Montserrat-Alternates (600, 15px, 18px);
+    border-radius: 100px;
+    margin-left: 12%;
+    margin-top: 15%;
+    border: none;
+}
+
+.half {
+    width: 100%;
+    padding: 0 1em;
+    margin: 15% auto 0 auto;
+  }
+  .questions__title{
+    @include Montserrat-Alternates (700, 20px, 24px);
+    color: $black;
+    margin:0 auto;
+  }
+  /* Acordeon styles */
+  .tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    margin-top: 5%;
+    /*overflow: hidden;*/
+  }
+  .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab label {
+    width: 90%;
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #FAFAFA;
+    @include Montserrat-Alternates (600, 15px, 18px);
+    line-height: 3;
+    color:$black;
+    border-radius: 10%;
+  }
+  .tab-content {
+    max-height: 0;
+    overflow: hidden;
+    color:#262626;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+  }
+  .tab-content p {
+    margin: 1em;
+  }
+  /* :checked */
+  .tab input:checked ~ .tab-content {
+    max-height: 100vh;
+  }
+  /* Icon */
+  .tab label::after {
+    position: absolute;
+    right:0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+  }
+  .tab input[type=checkbox] + label::after {
+    content: "+";
+  }
+  .tab input[type=radio] + label::after {
+    content: "\25BC";
+    color: $light-brown;
+  }
+  .tab input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+    color: $light-brown;
+  }
+  .tab input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+  }
