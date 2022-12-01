@@ -1,0 +1,73 @@
+@import './colors';
+@import './mixins';
+
+.work {
+    margin-bottom: 120px;
+}
+
+.work__title {
+    width: fit-content;
+    margin-left: 12%;
+    margin-bottom: 0%;
+}
+
+.work-container {
+    margin-left: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-content {
+    max-width: 430px;
+}
+
+.work-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.work-item__num {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 50px;
+    color: rgba(189, 112, 72, 0.2);
+}
+
+.work-item__content {
+    max-width: 290px;
+    margin-left: 45px;
+}
+
+.work-item__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #262626;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.work-item__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(38, 38, 38, 0.7);
+    margin-top: 2%;
+}
+
+.work__pic_table {
+    display: block;
+    position: absolute;
+    top: 17%;
+    left: 49%;
+}
+
+.work__pic_sofa {
+    display: block;
+}
+
+.work-items {
+    margin-top: 19%;
+}

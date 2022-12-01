@@ -1,0 +1,160 @@
+@import './colors';
+@import './mixins';
+
+body,
+html {
+    position: relative;
+    height: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.page-section {
+    background-image: url("/assets/images/main_page.jpg");
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.page-section__title {
+    max-width: 850px;
+    @include Montserrat-Alternates (600, 40px, 49px);
+    text-align: center;
+    color: #ffffff;
+    padding-top: 205px;
+    margin: 0 auto 42px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 28px 50px;
+    @include Montserrat-Alternates (600, 15px, 18px);
+    color: #ffffff;
+    background: #bd7048;
+    border-radius: 100px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.card-btn {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 364px;
+    padding: 30px 50px;
+    background: #262626;
+    box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 100px 0 0 100px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    border: none;
+}
+
+.card-btn:hover {
+    width: 380px;
+}
+
+.btn:hover {
+    background-color: #a9633e;
+}
+
+.card-btn__text {
+    @include Montserrat-Alternates (500, 15px, 18px);
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.card-btn__img-container {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+
+
+.order-desc {
+    display: block;
+    text-align: right;
+    @include Montserrat-Alternates (500, 10px, 12px);
+    color: $light-white;
+}
+
+.info {
+    margin-bottom: 60px;
+}
+
+.info-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff;
+    padding: 68px 75px;
+    border-radius: 50px 50px 0 0;
+    margin-top: -140px;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.info-item {
+    display: flex;
+}
+
+.info__img {
+    width: 39px;
+    height: 39px;
+}
+
+.info-item__content {
+    margin-left: 25px;
+}
+
+.info-item__title {
+    @include Montserrat-Alternates (500, 20px, 24px);
+    color: $black;
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+
+.info-item__desc {
+    max-width: 185px;
+    @include Montserrat-Alternates (500, 15px, 18px);
+    color: rgba(38, 38, 38, 0.7);
+}
+
+.swiper-pagination {
+    margin-bottom: 10%;
+}

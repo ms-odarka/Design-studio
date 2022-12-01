@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/css/normalize.css" />
+        <link rel="stylesheet" href="/styles/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide page-section">
+                    <h2 class="page-section__title">
+                        Дизайн-проект для вашей квартиры за 2 недели и 199 000 ₸
+                    </h2>
+                    <a href="#" class="page-section__btn btn">Консультация</a>
+                </div>
+                <div class="swiper-slide page-section">
+                    <h2 class="page-section__title">
+                        Дизайн-проект для вашей квартиры за 2 недели и 199 000 ₸
+                    </h2>
+                    <a href="#" class="page-section__btn btn">Консультация</a>
+                </div>
+                <div class="swiper-slide page-section">
+                    <h2 class="page-section__title">
+                        Дизайн-проект для вашей квартиры за 2 недели и 199 000 ₸
+                    </h2>
+                    <a href="#" class="page-section__btn btn">Консультация</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button class="card-btn">
+                <div class="card-btn__text">
+                    <span class="order">Мой заказ</span>
+                    <span class="order-desc">3 х 29 000тг</span>
+                </div>
+                <div class="card-btn__img-container">
+                    <img
+                        src="/assets/images/bag.svg"
+                        alt="card"
+                        class="bag-btn__img"
+                    />
+                </div>
+            </button>
+        </div>
+        <div class="info">
+            <div class="container">
+                <ul class="info-items">
+                    <li class="info-item">
+                        <img
+                            src="/assets/images/time.svg"
+                            alt="info"
+                            class="info__img"
+                        />
+                        <div class="info-item__content">
+                            <h4 class="info-item__title">2 недели</h4>
+                            <p class="info-item__desc">
+                                срок выполнения заказа
+                            </p>
+                        </div>
+                    </li>
+                    <li class="info-item">
+                        <img
+                            src="/assets/images/check.svg"
+                            alt="info"
+                            class="info__img"
+                        />
+                        <div class="info-item__content">
+                            <h4 class="info-item__title">Не важно</h4>
+                            <p class="info-item__desc">
+                                Сколько квадратов, цена - одна!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="info-item">
+                        <img
+                            src="/assets/images/wallet.svg"
+                            alt="info"
+                            class="info__img"
+                        />
+                        <div class="info-item__content">
+                            <h4 class="info-item__title">Рассрочка</h4>
+                            <p class="info-item__desc">до 24 месяцев</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+            });
+        </script>
+    </body>
+</html>
