@@ -1,16 +1,68 @@
 @import './colors';
 @import './mixins';
-
 body{
-    width: 375px; 
+  width: 100%;
+  max-width: 100%; 
 }
-
+.wrapper{
+  padding: 0 33px;
+}
 .our-styles__title{
     @include Montserrat-Alternates (700, 25px, 30px);
     text-align: center;
     margin-top: 10%;
-    
 }
+.our-styles__title-desktop, .our-styles__text-desktop{
+  display: none;
+}
+@media (min-width: 640px) {
+  .our-styles__title{
+    font-size: calc(25px + 10 * (100vw / 1440)) ;
+  }
+  .wrapper{
+    padding: 0 90px;
+  }
+  .our-styles__title{
+    display: none;
+  }
+  .our-styles__title-desktop{
+    display: block;
+    @include Montserrat-Alternates (700, 30px, 49px);
+    text-align: center;
+    margin-top: 10%;
+  }
+  .our-styles__text-desktop{
+    display: block;
+    @include Montserrat-Alternates (500, 20px, 24px);
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper{
+    padding: 0 130px;
+  }
+  .our-styles__title{
+    display: none;
+  }
+  .our-styles__title-desktop{
+    display: block;
+    @include Montserrat-Alternates (700, 40px, 49px);
+    text-align: center;
+    margin-top: 10%;
+  }
+  .our-styles__text-desktop{
+    display: block;
+    @include Montserrat-Alternates (500, 20px, 24px);
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
 .room__title{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -18,7 +70,20 @@ body{
     align-items: center;
     @include Montserrat-Alternates (500, 20px, 30px);
     margin-top: 10%;
-    margin-left: 7%;
+}
+@media (min-width: 1440px) {
+  .room__title{ 
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    justify-content: center;
+    align-items: center;
+    @include Montserrat-Alternates (500, 30px, 36px);
+    margin-top: 10%;
+  }
+  .carousel-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .hallway{
     display: grid;
@@ -27,12 +92,12 @@ body{
     align-items: center;
 }
 .carousel, .slide{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 
 }
 .signature_slider{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,26 +127,46 @@ body{
     margin: 0 auto;
 }
 .styles-btn{
+    display: block;
     width: 285px;
     height: 74px;
     color: #FFFFFF;
     background-color: $light-brown;
     @include Montserrat-Alternates (600, 15px, 18px);
     border-radius: 100px;
-    margin-left: 12%;
-    margin-top: 15%;
+    margin: 15% auto 0 auto;
     border: none;
+    padding: 0;
+}
+@media (min-width: 640px) {
+  .styles-btn{
+    font-size: calc(15px + 10 * (100vw / 1440)) ;
+    min-width: 400px;
+    min-height: 85px;
+    margin-top: 5%;
+  }
 }
 
 .half {
     width: 100%;
-    padding: 0 1em;
     margin: 15% auto 0 auto;
   }
   .questions__title{
     @include Montserrat-Alternates (700, 20px, 24px);
     color: $black;
-    margin:0 auto;
+    text-align: center;
+  }
+  @media (min-width: 640px) {
+    .questions__title{
+      font-size: calc(20px + 10 * (100vw / 1440));
+      margin-top:3% ;
+    }
+  }
+  @media (min-width: 1440px) {
+    .questions__title{
+      @include Montserrat-Alternates (700, 40px, 48px);
+      margin-top:5%;
+    }
   }
   /* Acordeon styles */
   .tab {
@@ -98,7 +183,7 @@ body{
     z-index: -1;
   }
   .tab label {
-    width: 90%;
+    width: 100%;
     position: relative;
     display: block;
     padding: 0 0 0 1em;
@@ -107,6 +192,21 @@ body{
     line-height: 3;
     color:$black;
     border-radius: 10%;
+  }
+  @media (min-width: 640px) {
+    .tab label{
+      font-size: calc(15px + 10 * (100vw / 1440)) ;
+    }
+  }
+  @media (min-width: 1440px) {
+    .tab label{
+      @include Montserrat-Alternates (600, 20px, 24px);
+      height: 90px;
+      text-align: start;
+      display: block;
+      align-self: center;
+      padding-top: 3%;
+    }
   }
   .tab-content {
     max-height: 0;
@@ -119,6 +219,17 @@ body{
   .tab-content p {
     margin: 1em;
     @include Montserrat-Alternates (500, 15px, 18px);
+  }
+
+  @media (min-width: 640px) {
+    .tab-content p{
+      font-size: calc(15px + 10 * (100vw / 1440)) ;
+    }
+  }
+  @media (min-width: 1440px) {
+    .tab-content p{
+      @include Montserrat-Alternates (500, 20px, 24px);
+    }
   }
   /* :checked */
   .tab input:checked ~ .tab-content {
@@ -152,3 +263,4 @@ body{
   .tab input[type=radio]:checked + label::after {
     transform: rotateX(180deg);
   }
+  
