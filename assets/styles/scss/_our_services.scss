@@ -5,83 +5,75 @@
     margin-bottom: 160px;
 }
 
-.services__title {
+.section__title {
     text-align: center;
     margin-bottom: 80px;
+    @include Montserrat-Alternates (700, 40px, 49px);
+    color: $black;
 }
 
 .services-container {
     display: flex;
     align-items: start;
-    margin: 0 0 80px 140px;
+    justify-content: space-between;
+    margin: 0 0 80px 135px;
+}
+
+.services-container-two {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 0 135px 80px 0;
 }
 
 .services-content__title {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
-    color: #262626;
+    @include Montserrat-Alternates (600, 30px, 37px);
+    color: $black;
     margin-bottom: 23px;
 }
 
 .services-content__subtext {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: rgba(38, 38, 38, 0.7);
+    @include Montserrat-Alternates (500, 20px, 24px);
+    color: $black-desc;
     margin-bottom: 30px;
 }
 
 .black-text {
-    color: #262626;
+    color: $black;
 }
 
 .services-content__text {
     max-width: 497px;
     margin-bottom: 44px;
+    @include Montserrat-Alternates (400, 20px, 24px);
+    color: $black;
 }
 
 .services-list {
     list-style: circle;
     margin-left: 15px;
     margin-bottom: 80px;
+    @include Montserrat-Alternates (400, 20px, 24px);
+    color: $dark-black;
 }
 
-.services-content_r {
+.services-content_right {
     margin-left: 80px;
 }
 
-.services__pic {
-    flex-basis: 50%;
+.services-content_left {
+    margin-right: 80px;
 }
 
 .services__img_one {
     display: block;
-    margin-left: 30%;
     margin-top: 5%;
 }
 
 .services__img_two {
     display: block;
-    position: absolute;
-    top: 33%;
-    left: 60%;
-}
-
-.services__img_three {
-    position: relative;
-    display: block;
     margin-top: 5%;
-}
 
-.services__img_four {
-    display: block;
-    position: absolute;
-    top: 114%;
-}
-
-.services__img_r {
-    margin-top: -100px;
 }
 
 .services-btns {
@@ -93,17 +85,17 @@
 
 .services__btn {
     margin-bottom: 40px;
+    @include Montserrat-Alternates (600, 15px, 18px);
 }
 
 .download__btn {
     position: relative;
     padding-left: 50px;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    color: #bd7048;
+    @include Montserrat-Alternates (600, 15px, 18px);
+    color: $light-brown;
     transition: 0.3s;
     margin-bottom: 40px;
+    text-decoration: none;
 }
 
 .download__btn::before {
@@ -116,8 +108,44 @@
     height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
+
 }
 
 .download__btn:hover {
-    color: #f86515;
+    color: $brown;
+}
+
+@media (max-width: 1023px) {
+
+    .services__img_one {
+        display: none;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding-left: 40px;
+    }
+
+    .services-container-two {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding-left: 40px;
+    }
+
+    .services__img_two {
+        display: none;
+    }
+
+    .services-content_right {
+        margin: 0;
+    }
+
+    .services {
+        margin-bottom: 70px;
+    }
 }

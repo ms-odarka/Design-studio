@@ -16,17 +16,13 @@
     max-width: 1004px;
     margin: 0 auto 40px;
     text-align: center;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: rgba(38, 38, 38, 0.7);
+    @include Montserrat-Alternates (500, 20px, 24px);
+    color: $black-desc;
 }
 
 .design-items__title {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-    color: #262626;
+    @include Montserrat-Alternates (500, 30px, 37px);
+    color: $black;
     margin-bottom: 42px;
 }
 
@@ -56,10 +52,8 @@
 }
 
 .design-item__name {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #353535;
+    @include Montserrat-Alternates (600, 20px, 24px);
+    color: $black;
 }
 
 .btn__container {
@@ -69,21 +63,20 @@
 .card__btn {
     display: flex;
     justify-items: center;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    color: #bd7048;
+    @include Montserrat-Alternates (500, 15px, 18px);
+    color: $light-brown;
     height: 56px;
-    width: 182px;
+    width: 195px;
     padding: 1px 39px;
     border: none;
-    background: #fafafa;
+    background: $light-gray;
     border-radius: 100px;
     transition: 0.3s;
 }
 
 .card__btn:hover {
-    background: #e4dede;
+    cursor: pointer;
+    background: $gray;
 }
 
 .bag__img {
@@ -97,5 +90,25 @@
 
 .choose {
     display: inline-block;
-    margin-top: 17px;
+    margin-top: 19px;
+}
+
+@media (max-width: 1023px) {
+
+    .design__info {
+        display: none;
+    }
+
+    .design {
+        margin: 40px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .design-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 100px;
+    }
 }

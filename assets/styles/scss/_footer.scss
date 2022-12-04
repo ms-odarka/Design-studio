@@ -1,6 +1,17 @@
 @import './colors';
 @import './mixins';
 
+
+.footer-nav__link:hover {
+    color: $light-brown;
+    font-size: 15px;
+}
+
+.footer-text__privacy:hover {
+    color: $light-brown;
+    font-size: 15px;
+}
+
 @media (min-width: 1023px) {
 
     .footer {
@@ -236,7 +247,7 @@
     }
 }
 
-@media (max-width:365px) {
+@media (max-width:540px) {
     .footer-info {
         // .footer-info__btn
 
