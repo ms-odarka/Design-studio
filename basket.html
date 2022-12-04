@@ -104,30 +104,38 @@
 
         <!-- Блок с выбранными товарами -->
         <div class="basket-buy">
-            <label class="basket-label">Замеры*
-                <input class="basket-label__checkbox" type="checkbox" />
-                <span>39 000тг</span>
+            <h2 class="basket-buy_title">Ваш заказ:</h2>
+            <label class="basket-label buy">
+                    <input class="basket-label__checkbox" type="checkbox" />
+                    <span class="basket-label__check-mark"></span>
+                    <span class="basket-label__text"> Замеры*</span>
+                    <span class="basket-label__text add-text">39 000тг</span>
             </label>
 
-            <label class="basket-label">Планировка
+            <label class="basket-label buy">
                 <input class="basket-label__checkbox" type="checkbox" />
-                <span>39 000тг</span>
+                <span class="basket-label__text buy-text">Планировка</span>
+                <span class="basket-label__text add-text">39 000тг</span>
             </label>
 
-            <label class="basket-label">Тендер стр. бригад
+            <label class="basket-label buy">
                 <input class="basket-label__checkbox" type="checkbox" />
-                <span>39 000тг</span>
+                <span class="basket-label__text buy-text">Тендер стр. бригад</span>
+                <span class="basket-label__text add-text">39 000тг</span>
             </label>
 
             <p class="basket-buy_total">
-                <span>Итого:</span>
-                <span>179 000тг</span>
+                <span class="basket-buy_total__text">Итого:</span>
+                <span class="basket-buy_total__price">179 000тг</span>
             </p>
-
-            <button class="basket-buy_btn">Оставить заявку</button>
-            <button class="basket-buy_btn">Оплатить 179 000тг</button>
-            <button class="basket-buy_btn">Оплатить 179 000тг</button>
-            <p class="basket-buy_comment">Нажимая на кнопку “Оплатить” вы подтверждаете свое согласие с офертой</p>
+            <div class="basket-buy_btns">
+                <button class="basket-buy_btn light-brown">Оставить заявку</button>
+                <button class="basket-buy_btn orange">Оплатить 179 000тг</button>
+                <button class="basket-buy_btn red">Оплатить в рассрочку</button>
+                <p class="basket-buy_comment">Нажимая на кнопку “Оплатить” вы подтверждаете свое согласие с 
+                <a class="basket-buy__link" href="#">офертой</a>
+                </p>
+            </div>
         </div>
 
     </div>

@@ -23,7 +23,7 @@ body{
     height: 138px;
     border: 1px solid $light-brown;
     border-radius: 15px;
-    margin: 0 auto;
+    
 }
 
 // Оформление чекбокса
@@ -106,7 +106,11 @@ body{
     flex-direction: column;
 }
 // чекбокс стилей
-
+.basket-styles_label{
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+}
 .checkbox{
     display: none;
 }
@@ -134,4 +138,69 @@ body{
 .basket-styles_label__text{
     @include Montserrat-Alternates (500, 15px, 18px);
     color:$light-black;
+}
+// Форма заказа
+.basket-buy{
+    background-color: #FFF6F1;
+    border-radius: 15px;
+    margin: 65px auto 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    .basket-buy_title{
+        @include Montserrat-Alternates (600, 20px, 24px);
+    }
+    .buy{
+        margin-left: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .buy-text{
+        margin-left: 0;
+    }
+
+    .basket-buy_total{
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .basket-buy_total__text{
+        @include Montserrat-Alternates (600, 20px, 24px);
+    }
+    .basket-buy_total__price{
+        @include Montserrat-Alternates (500, 15px, 18px);
+        color:$light-black;
+    }
+}
+// кнопки
+.basket-buy_btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.basket-buy_btn{
+    width: 276px;
+    height: 64px;
+    border-radius: 100px;
+    color: $white;
+    border: none;
+    margin-bottom:19px;
+}
+.light-brown{
+    background-color:$light-brown;
+}
+.orange{
+    background-color:#FFDDCB;
+    color: $light-brown;
+}
+.red{
+    background-color:$red;
+}
+.basket-buy_comment{
+    @include Montserrat-Alternates (500, 15px, 18px);
+    color:$light-black;
+}
+.basket-buy__link{
+    color:$light-brown;
 }
