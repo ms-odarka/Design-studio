@@ -18,10 +18,14 @@
                     <span></span>
                 </label>
                 <nav class="header-menu__box">
-                    <a class="header-menu__item" href="#">Главная</a>
+                    <a class="header-menu__item" href="./main_page.html"
+                        >Главная</a
+                    >
                     <a class="header-menu__item" href="#">Каталог</a>
-                    <a class="header-menu__item" href="#">О нас</a>
-                    <a class="header-menu__item" href="#">Цены</a>
+                    <a class="header-menu__item" href="./about_us.html"
+                        >О нас</a
+                    >
+                    <a class="header-menu__item" href="./prices.html">Цены</a>
                 </nav>
             </div>
             <div class="header-info">
@@ -32,46 +36,74 @@
         </header>
         <main>
             <div class="main__consultion-section">
-                <div class="main__my-order-button"> 
+                <div class="main__my-order-button">
                     <div class="main__my-order-button_text">
                         <p class="order">Мой заказ</p>
                         <p class="order-desc">3 х 29 000тг</p>
                     </div>
-                    <button onclick="window.location.href = '';" class="main__my-order-button_button">
+                    <button
+                        onclick="window.location.href = './basket.html';"
+                        class="main__my-order-button_button"
+                    >
                         <img src="/assets/images/basket.svg" alt="basket" />
                     </button>
                 </div>
                 <p class="main__consultion-section_text">
                     Дизайн-проект для вашей квартиры за 2 недели и 199 000 ₸
                 </p>
-                <button onclick="window.location.href = '';" class="button consultation-button">Консультация</button>
+                <button
+                    onclick="window.location.href = '';"
+                    class="button consultation-button"
+                >
+                    Консультация
+                </button>
             </div>
             <div class="main__swipe">
-            <img class="main__swipe_img" src="/assets/images/swipe.svg" alt="swipe">
+                <img
+                    class="main__swipe_img"
+                    src="/assets/images/swipe.svg"
+                    alt="swipe"
+                />
             </div>
             <div class="main__conditions">
                 <div class="main__conditions_timeframes">
-                    <object class="main__conditions_image" data="/assets/images/time.svg" type="image/svg+xml">
-                        <img src="/assets/images/time.png" alt="time"/>
+                    <object
+                        class="main__conditions_image"
+                        data="/assets/images/time.svg"
+                        type="image/svg+xml"
+                    >
+                        <img src="/assets/images/time.png" alt="time" />
                     </object>
-                        <p class="main__conditions_emphasis">2 недели</p>
-                        <p class="main__conditions_text">срок выполнения заказа</p>
+                    <p class="main__conditions_emphasis">2 недели</p>
+                    <p class="main__conditions_text">срок выполнения заказа</p>
                 </div>
                 <div class="main__conditions_price">
-                    <object class="main__conditions_image" data="/assets/images/check.svg" type="image/svg+xml">
+                    <object
+                        class="main__conditions_image"
+                        data="/assets/images/check.svg"
+                        type="image/svg+xml"
+                    >
                         <img src="/assets/images/check.png" alt="check" />
                     </object>
-                        <p class="main__conditions_emphasis">Не важно</p>
-                        <p class="main__conditions_text">Сколько квадратов, цена - одна!</p>
+                    <p class="main__conditions_emphasis">Не важно</p>
+                    <p class="main__conditions_text">
+                        Сколько квадратов, цена - одна!
+                    </p>
                 </div>
-    
+
                 <div class="main__conditions_installment-plan">
-                    <object class="main__conditions_image" data="/assets/images/wallet.svg" type="image/svg+xml">
+                    <object
+                        class="main__conditions_image"
+                        data="/assets/images/wallet.svg"
+                        type="image/svg+xml"
+                    >
                         <img src="/assets/images/wallet.png" alt="wallet" />
                     </object>
                     <p class="main__conditions_emphasis">Рассрочка</p>
                     <p class="main__conditions_text">до 24 месяцев</p>
-                    <a class="main__conditions_kaspi" href="https://kaspi.kz/"><img src="/assets/images/kaspi.svg" alt="kaspi" /></a>
+                    <a class="main__conditions_kaspi" href="https://kaspi.kz/"
+                        ><img src="/assets/images/kaspi.svg" alt="kaspi"
+                    /></a>
                 </div>
             </div>
             <section class="work">
@@ -641,9 +673,9 @@
                 <span class="footer-logo__desc">дизайн интерьеров</span>
             </div>
             <div class="footer-nav">
-                <a href="#" class="footer-nav__link">Главная</a>
-                <a href="#" class="footer-nav__link">О нас</a>
-                <a href="#" class="footer-nav__link">Цены</a>
+                <a href="./main_page.html" class="footer-nav__link">Главная</a>
+                <a href="./about_us.html" class="footer-nav__link">О нас</a>
+                <a href="./prices.html" class="footer-nav__link">Цены</a>
             </div>
             <div class="footer-text">
                 <a href="#" class="footer-text__privacy"
@@ -662,14 +694,5 @@
                 >
             </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                pagination: {
-                    el: ".swiper-pagination",
-                    dynamicBullets: true,
-                },
-            });
-        </script>
     </body>
 </html>

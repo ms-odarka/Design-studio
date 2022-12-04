@@ -295,4 +295,8 @@
         @include Montserrat-Alternates (500, 0.7vw, 0.9vw);
         color: rgba(255, 255, 255, 0.7);
     }
+
+    .button:hover {
+        background-color: $brown;
+    }
 }
