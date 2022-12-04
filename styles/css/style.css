@@ -1510,7 +1510,8 @@ html {
 .features-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 60px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
 }
 
 .features-left {
@@ -1696,7 +1697,8 @@ html {
   .features-container {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 60px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
   }
   .more-features__item {
     grid-column: span 1;
@@ -2375,4 +2377,125 @@ body {
 
 .basket-buy__link {
   color: #BD7048;
+}
+
+.basket_desktop_comment {
+  display: none;
+}
+
+@media (min-width: 1224px) {
+  .basket_container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 90px;
+    padding-right: 45px;
+  }
+  .order_title {
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 100px;
+  }
+  .basket_desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 4fr 1fr 2fr;
+    grid-template-areas: "orders buy-box" "design-project  buy-box" "additional  buy-box" "nothing comm" "styles styles";
+    gap: 1%;
+  }
+  .part-of-the-order {
+    grid-area: orders;
+    width: 512px;
+    border: none;
+  }
+  .basket-label__text {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .part-of-the-order__item {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .basket-label__check-mark {
+    width: 37px;
+    height: 37px;
+  }
+  .basket-label__check-mark::before {
+    background-image: url(/assets/images/mark-desktop.svg);
+    width: 20px;
+    height: 15px;
+  }
+  .design-project {
+    grid-area: design-project;
+    width: 512px;
+    height: 250px;
+    border: 1px solid #BD7048;
+    border-radius: 15px;
+  }
+  .additional-services {
+    grid-area: additional;
+    width: 512px;
+  }
+  .add {
+    margin-top: 40px;
+  }
+  .add-text {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .basket-styles {
+    grid-area: styles;
+    width: 643px;
+  }
+  .basket-styles_label__text {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .basket-buy {
+    grid-area: buy-box;
+    width: 512px;
+    height: 1000px;
+    padding-left: 51px;
+    padding-right: 51px;
+  }
+  .basket-buy_title {
+    margin-top: 10%;
+  }
+  .buy {
+    margin-bottom: 10%;
+  }
+  .basket-buy_total__price {
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+  }
+  .basket-buy_btns {
+    margin-top: 10%;
+  }
+  .basket-buy_btn {
+    width: 421px;
+    margin-bottom: 19px;
+  }
+  .basket_desktop_comment {
+    grid-area: comm;
+    display: block;
+    width: 416px;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(59, 59, 59, 0.5);
+    margin-left: 10%;
+  }
 }/*# sourceMappingURL=style.css.map */
