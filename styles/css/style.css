@@ -704,6 +704,7 @@ html {
     margin-bottom: 15%;
     border-style: none;
     color: #FFFFFF;
+    cursor: pointer;
     font-family: "Montserrat Alternates";
     font-weight: 600;
     font-size: 1vw;
