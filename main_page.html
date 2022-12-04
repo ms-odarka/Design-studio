@@ -35,92 +35,47 @@
             </div>
         </header>
         <main>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide page-section">
-                        <h2 class="page-section__title">
-                            Дизайн-проект для вашей квартиры за 2 недели и 199
-                            000 ₸
-                        </h2>
-                        <a href="#" class="page-section__btn btn"
-                            >Консультация</a
-                        >
+            <div class="main__consultion-section">
+                <div class="main__my-order-button"> 
+                    <div class="main__my-order-button_text">
+                        <p class="order">Мой заказ</p>
+                        <p class="order-desc">3 х 29 000тг</p>
                     </div>
-                    <div class="swiper-slide page-section">
-                        <h2 class="page-section__title">
-                            Дизайн-проект для вашей квартиры за 2 недели и 199
-                            000 ₸
-                        </h2>
-                        <a href="#" class="page-section__btn btn"
-                            >Консультация</a
-                        >
-                    </div>
-                    <div class="swiper-slide page-section">
-                        <h2 class="page-section__title">
-                            Дизайн-проект для вашей квартиры за 2 недели и 199
-                            000 ₸
-                        </h2>
-                        <a href="#" class="page-section__btn btn"
-                            >Консультация</a
-                        >
-                    </div>
+                    <button onclick="window.location.href = '';" class="main__my-order-button_button">
+                        <img src="/assets/images/basket.svg" alt="basket" />
+                    </button>
                 </div>
-                <div class="swiper-pagination"></div>
-                <button class="card-btn">
-                    <span class="card-btn__text">
-                        <span class="order">Мой заказ</span>
-                        <span class="order-desc">3 х 29 000тг</span>
-                    </span>
-                    <span class="card-btn__img-container">
-                        <img
-                            src="/assets/images/bag.svg"
-                            alt="card"
-                            class="bag-btn__img"
-                        />
-                    </span>
-                </button>
+                <p class="main__consultion-section_text">
+                    Дизайн-проект для вашей квартиры за 2 недели и 199 000 ₸
+                </p>
+                <button onclick="window.location.href = '';" class="button consultation-button">Консультация</button>
             </div>
-            <div class="info">
-                <div class="container">
-                    <ul class="info-items">
-                        <li class="info-item">
-                            <img
-                                src="/assets/images/time.svg"
-                                alt="info"
-                                class="info__img"
-                            />
-                            <div class="info-item__content">
-                                <h4 class="info-item__title">2 недели</h4>
-                                <p class="info-item__desc">
-                                    срок выполнения заказа
-                                </p>
-                            </div>
-                        </li>
-                        <li class="info-item">
-                            <img
-                                src="/assets/images/check.svg"
-                                alt="info"
-                                class="info__img"
-                            />
-                            <div class="info-item__content">
-                                <h4 class="info-item__title">Не важно</h4>
-                                <p class="info-item__desc">
-                                    Сколько квадратов, цена - одна!
-                                </p>
-                            </div>
-                        </li>
-                        <li class="info-item">
-                            <img
-                                src="/assets/images/wallet.svg"
-                                alt="info"
-                                class="info__img"
-                            />
-                            <div class="info-item__content">
-                                <h4 class="info-item__title">Рассрочка</h4>
-                                <p class="info-item__desc">до 24 месяцев</p>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="main__swipe">
+            <img class="main__swipe_img" src="/assets/images/swipe.svg" alt="swipe">
+            </div>
+            <div class="main__conditions">
+                <div class="main__conditions_timeframes">
+                    <object class="main__conditions_image" data="/assets/images/time.svg" type="image/svg+xml">
+                        <img src="/assets/images/time.png" alt="time"/>
+                    </object>
+                        <p class="main__conditions_emphasis">2 недели</p>
+                        <p class="main__conditions_text">срок выполнения заказа</p>
+                </div>
+                <div class="main__conditions_price">
+                    <object class="main__conditions_image" data="/assets/images/check.svg" type="image/svg+xml">
+                        <img src="/assets/images/check.png" alt="check" />
+                    </object>
+                        <p class="main__conditions_emphasis">Не важно</p>
+                        <p class="main__conditions_text">Сколько квадратов, цена - одна!</p>
+                </div>
+    
+                <div class="main__conditions_installment-plan">
+                    <object class="main__conditions_image" data="/assets/images/wallet.svg" type="image/svg+xml">
+                        <img src="/assets/images/wallet.png" alt="wallet" />
+                    </object>
+                    <p class="main__conditions_emphasis">Рассрочка</p>
+                    <p class="main__conditions_text">до 24 месяцев</p>
+                    <a class="main__conditions_kaspi" href="https://kaspi.kz/"><img src="/assets/images/kaspi.svg" alt="kaspi" /></a>
                 </div>
             </div>
             <section class="work">
