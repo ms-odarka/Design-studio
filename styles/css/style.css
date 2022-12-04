@@ -284,8 +284,17 @@ html {
   font-size: 18px;
   background: #FFFFFF;
   /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -449,8 +458,6 @@ html {
     margin: 0 auto 42px;
   }
   .card-btn {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -691,7 +698,7 @@ html {
     justify-self: center;
     background-color: #BD7048;
     border-radius: 100px;
-    height: 35%;
+    height: 29%;
     width: 15%;
     margin-bottom: 15%;
     border-style: none;
@@ -730,8 +737,6 @@ html {
 }
 
 .work__title {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin-left: 12%;
   margin-bottom: 0%;
@@ -811,8 +816,6 @@ html {
     display: none;
   }
   .work__title {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     margin-left: 0%;
     margin-bottom: 0%;
@@ -831,8 +834,6 @@ html {
     text-align: center;
   }
   .work-item__title {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -1056,8 +1057,6 @@ html {
     padding: 40px;
   }
   .plan__text {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
   }
   .plan-container {
@@ -1065,8 +1064,6 @@ html {
     margin-bottom: 45px;
   }
   .plan__content {
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
   }
 }
@@ -1226,8 +1223,6 @@ html {
   margin: 0%;
   margin-top: 19px;
   margin-left: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-family: "Montserrat Alternates";
   font-weight: 600;
@@ -2375,4 +2370,4 @@ body {
 
 .basket-buy__link {
   color: #BD7048;
-}/*# sourceMappingURL=style.css.map */
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/css/normalize.css" />
+        <link rel="stylesheet" href="/styles/css/style.css" />
+        <title>Страница стилей</title>
+    </head>
+    <body>
+        <header class="header header-shadow">
+            <a href="#" class="header__logo"></a>
+            <span class="header__desc">дизайн интерьеров</span>
+            <div class="header-menu">
+                <input id="header-menu__toggle" type="checkbox" />
+                <label class="header-menu__btn" for="header-menu__toggle">
+                    <span></span>
+                </label>
+                <nav class="header-menu__box">
+                    <a class="header-menu__item" href="./main_page.html"
+                        >Главная</a
+                    >
+                    <a class="header-menu__item" href="./styles_page.html"
+                        >Каталог</a
+                    >
+                    <a class="header-menu__item" href="./about_us.html"
+                        >О нас</a
+                    >
+                    <a class="header-menu__item" href="./prices.html">Цены</a>
+                </nav>
+            </div>
+            <div class="header-info">
+                <button class="header-info__btn" type="button"></button>
+                <span class="header-info__call">+7 700 505 3000</span>
+                <span class="header-info__time">с 9:00 до 18:00</span>
+            </div>
+        </header>
+        <main>
+            <section class="design">
+                <h2 class="design__title section__title">Дизайн комнат</h2>
+                <p class="design__info">
+                    Выбирая дизайн комнаты, вы получаете смету со списком всех
+                    предметов в интерьере, названиями, артикулами, цветом стен и
+                    так далее.
+                </p>
+                <div class="designs-container">
+                    <div class="design-items__container">
+                        <h3 class="design-items__title">Гостиные</h3>
+                        <div class="design-items">
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/living_room_one.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Акварель</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/living_room_two.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Ира</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/living_room_three.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Нурс</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-items__container">
+                        <h3 class="design-items__title">Детские</h3>
+                        <div class="design-items">
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/childrens_room_one.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Синяя</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/childrens_room_two.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Розовая</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/childrens_room_three.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Яркая</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-items__container">
+                        <h3 class="design-items__title">Коридоры - прихожие</h3>
+                        <div class="design-items">
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/hallway_one.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Ирина</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/hallway_two.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Акварель</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/hallway_three.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Кадыр</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-items__container">
+                        <h3 class="design-items__title">Кухни</h3>
+                        <div class="design-items">
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/kitchen_one.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Ирина</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/kitchen_two.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Акварель</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/kitchen_three.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Кадыр</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-items__container">
+                        <h3 class="design-items__title">Санузлы</h3>
+                        <div class="design-items">
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/bathroom_one.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Нурл су</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/bathroom_two.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Оркенд су 1</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/bathroom_three.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Оркенд су 2</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-items__container">
+                        <h3 class="design-items__title">Спальни</h3>
+                        <div class="design-items">
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/bedroom_one.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Акварель</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/bedroom_two.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Нурл свет</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <img
+                                    src="/assets/images/bedroom_three.png"
+                                    alt="design"
+                                    class="design__img"
+                                />
+                                <div class="design-item__info">
+                                    <p class="design-item__name">Ира</p>
+                                    <button class="card__btn">
+                                        <img
+                                            src="/assets/images/bag.svg"
+                                            alt="bag"
+                                            class="bag__img"
+                                        />
+                                        <span class="choose">Выбрать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-logo">
+                <a href="#" class="footer-logo__img"></a>
+                <span class="footer-logo__desc">дизайн интерьеров</span>
+            </div>
+            <div class="footer-nav">
+                <a href="./main_page.html" class="footer-nav__link">Главная</a>
+                <a href="./about_us.html" class="footer-nav__link">О нас</a>
+                <a href="./prices.html" class="footer-nav__link">Цены</a>
+            </div>
+            <div class="footer-text">
+                <a href="#" class="footer-text__privacy"
+                    >Политика конфиденциальности</a
+                >
+                <a href="#" class="footer-text__privacy">Условия пользования</a>
+            </div>
+            <div class="footer-info">
+                <button class="footer-info__btn" type="button"></button>
+                <span class="footer-info__call">+7 700 505 3000</span>
+                <span class="footer-info__time">с 9:00 до 18:00</span>
+            </div>
+            <div class="footer-content">
+                <span class="footer-content__copy"
+                    >(с) 2022. Все права защищены.</span
+                >
+            </div>
+        </footer>
+    </body>
+</html>
