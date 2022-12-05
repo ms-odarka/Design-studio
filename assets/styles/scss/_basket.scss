@@ -204,3 +204,111 @@ body{
 .basket-buy__link{
     color:$light-brown;
 }
+.basket_desktop_comment{
+    display: none;
+}
+// десктопная версия
+@media (min-width:1224px) {
+    .basket_container{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 90px;
+        padding-right: 45px;
+    }
+    .order_title{
+        @include Montserrat-Alternates (600, 30px, 37px);
+        margin-top: 100px ;
+    }
+
+    // грид сетка
+    .basket_desktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr 4fr 1fr 2fr;
+        grid-template-areas:
+            'orders buy-box'
+            'design-project  buy-box'
+            'additional  buy-box'
+            'nothing comm'
+            'styles styles';
+        gap: 1%;
+    }
+    .part-of-the-order{
+        grid-area: orders;
+        width: 512px;
+        border: none;
+    }
+    .basket-label__text{
+        @include Montserrat-Alternates (500, 20px, 24px);
+    }
+    .part-of-the-order__item{
+        @include Montserrat-Alternates (500, 15px, 18px);
+    }
+    .basket-label__check-mark{
+        width: 37px;
+        height: 37px;
+    }
+    .basket-label__check-mark::before{
+        background-image:url(/assets/images/mark-desktop.svg);
+        width:20px;
+        height: 15px;
+
+    }
+    .design-project{
+        grid-area: design-project;
+        width: 512px;
+        height: 250px;
+        border: 1px solid $light-brown;
+        border-radius: 15px
+
+    }
+    .additional-services{
+        grid-area: additional;
+        width: 512px;
+    }
+    .add{
+        margin-top: 40px;
+    }
+    .add-text{
+        @include Montserrat-Alternates (500, 20px, 24px);
+    }
+    .basket-styles{
+        grid-area: styles;
+        width: 643px;
+    }
+    .basket-styles_label__text{
+        @include Montserrat-Alternates (500, 20px, 24px);
+    }
+    .basket-buy{
+        grid-area: buy-box;
+        width: 512px;
+        height: 1000px;
+        padding-left: 51px;
+        padding-right: 51px;
+    }
+    .basket-buy_title{
+        margin-top: 10%;
+    }
+    .buy{
+        margin-bottom: 10%;
+    }
+    .basket-buy_total__price{
+        @include Montserrat-Alternates (600, 15px, 18px);
+        color: #000;
+    }
+    .basket-buy_btns{
+        margin-top: 10%;
+    }
+    .basket-buy_btn{
+        width: 421px;
+        margin-bottom:19px;
+    }
+    .basket_desktop_comment{
+        grid-area: comm;
+        display: block;
+        width: 416px;
+        @include Montserrat-Alternates (500, 15px, 18px);
+        color:$light-black ;
+        margin-left: 10%;
+    }
+}
