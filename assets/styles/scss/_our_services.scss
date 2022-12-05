@@ -26,6 +26,10 @@
     margin: 0 135px 80px 0;
 }
 
+.services__img_one {
+    width: 100%;
+}
+
 .services-content__title {
     @include Montserrat-Alternates (600, 30px, 37px);
     color: $black;
