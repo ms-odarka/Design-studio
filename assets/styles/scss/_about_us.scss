@@ -6,9 +6,20 @@ body {
     max-width: 100%;
 }
 
-.about_us-wrapper {
-    width: 100%;
-    max-width: 100%;
+.play__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, #BD7048 0%, rgba(189, 112, 72, 0) 0.01%, #BD7048 100%);
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.play__video:hover {
+    transform: translateY(-10px);
 }
 
 .red_text {
@@ -38,6 +49,7 @@ body {
 
 .about_us__title {
     @include Montserrat-Alternates (600, 20px, 24px);
+    margin-top: 1%;
 }
 
 // адаптив первого блока 
@@ -232,6 +244,7 @@ body {
 
 // блок четвертый адаптив
 @media (min-width: 640px) {
+
     .about_us-people {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -272,6 +285,7 @@ body {
 .about_us-lead {
     .about_us-slogan {
         @include Montserrat-Alternates (500, 25px, 30px);
+        margin-bottom: 10%;
     }
 
     hr {
@@ -280,7 +294,7 @@ body {
 }
 
 
-@media (min-width: 640px) {
+@media (min-width: 639.98px) {
     .about_us-lead {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -302,31 +316,63 @@ body {
     }
 }
 
+@media (min-width: 640px) and (max-width: 855px) {
+    .about_us-box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about_us-subtitle {
+        grid-column: span 1;
+    }
+
+    .about_us-box__team {
+        grid-column: span 1;
+    }
+
+    .about_US-people {
+        margin: 0;
+    }
+
+    .about_us-lead hr {
+        display: none;
+    }
+
+    .about_us-box hr {
+        display: none;
+    }
+
+}
+
 // блок пятый
 .about_us-video {
-    background-image: url(/assets/images/show_real_mobile.png);
+    position: relative;
+    background: url(/assets/images/show_real.png);
     width: 100%;
-    height: 60vh;
-    background-repeat: no-repeat;
+    border-radius: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    margin-top: 37px;
-    max-width: 100%;
+    align-items: center;
+    height: 100vh;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
 
     .end {
         color: $white;
-        margin: 0 37px 60px 37px;
         text-align: center;
     }
 }
 
-@media (min-width: 640px) {
+
+@media (max-width: 1024px) {
     .about_us-video {
-        background-image: url(/assets/images/show_real.png);
-        width: 100%;
-        height: 70vh;
-        background-size: 100% 100%;
+        height: 45vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .about_us-video {
+        height: 30vh;
     }
 }
