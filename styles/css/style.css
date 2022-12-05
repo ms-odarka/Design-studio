@@ -2115,12 +2115,40 @@ body {
   width: 100%;
   height: 60vh;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   margin-top: 37px;
   max-width: 100%;
   background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about_us-video .figure {
+  margin-top: 27%;
+}
+.about_us-video .circle {
+  width: 83px;
+  height: 83px;
+  background: radial-gradient(50% 50% at 50% 50%, #BD7048 0%, rgba(189, 112, 72, 0) 0.01%, #BD7048 100%);
+  border-radius: 41px;
+}
+.about_us-video .border {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  margin-top: 13px;
+  margin-left: 13px;
+  border-radius: 30px;
+  border: 5px solid white;
+}
+.about_us-video .triangle_right {
+  background-image: url(/assets/images/arrow-mobile.svg);
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 44px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 17px;
 }
 .about_us-video .end {
   color: #FFFFFF;
@@ -2134,6 +2162,43 @@ body {
     width: 100%;
     height: 70vh;
     background-size: 100% 100%;
+    position: relative;
+  }
+  .figure {
+    position: absolute;
+    bottom: 230px;
+  }
+  .circle {
+    width: 152px;
+    height: 152px;
+    background: radial-gradient(50% 50% at 50% 50%, #BD7048 0%, rgba(189, 112, 72, 0) 0.01%, #BD7048 100%);
+    border-radius: 75px;
+  }
+  .border {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    margin-top: 23px;
+    margin-left: 23px;
+    border-radius: 60px;
+    border: 10px solid white;
+  }
+  .triangle_right {
+    background-image: url(/assets/images/arrow-mobile.svg);
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 44px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .end {
+    position: absolute;
+    bottom: 90px;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 body {
