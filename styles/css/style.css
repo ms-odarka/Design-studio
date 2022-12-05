@@ -2893,3 +2893,188 @@ body {
     height: 60vh;
   }
 }
+.album {
+  margin-bottom: 65px;
+}
+
+.album__title_two {
+  font-family: "Montserrat Alternates";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-left: 135px;
+  color: #262626;
+}
+
+.download__btn_two {
+  margin-left: 135px;
+}
+
+.album-container {
+  background: url("/assets/images/album_printing_background.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 55px;
+}
+
+.album__title {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
+  padding: 0 0 40px 135px;
+}
+
+.album__info,
+.album__info_desc {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(38, 38, 38, 0.7);
+  margin: 0 135px 60px 135px;
+}
+
+.album-price__info {
+  display: flex;
+  align-items: center;
+}
+
+.album-price__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(38, 38, 38, 0.7);
+  margin-right: 30px;
+}
+
+.album__price {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #BD7048;
+}
+
+.album__items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 135px 0 135px;
+}
+.album__buttons {
+  display: flex;
+  align-items: center;
+}
+.album__btn {
+  background-color: #BD7048;
+  color: #262626;
+}
+
+.album__btn:hover {
+  background-color: #a9633e;
+}
+
+.buy__btn {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #BD7048;
+  background-color: #FFFFFF;
+}
+
+.buy__btn:hover {
+  background-color: #FFFFFF;
+}
+
+.album-price__text {
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(59, 59, 59, 0.5);
+}
+
+.album__price {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #262626;
+}
+
+@media (min-width: 455px) {
+  .more__title {
+    text-align: start;
+    margin-left: 135px;
+    margin-right: 135px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1119.98px) {
+  .more-features-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 135px 0px 135px;
+  }
+}
+@media (max-width: 722px) {
+  .album__buttons {
+    display: contents;
+  }
+  .album-price__info {
+    display: contents;
+  }
+  .album__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: start;
+  }
+  .album-price__text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .album__price {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .album__btn {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .buy__btn {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+@media (max-width: 500px) {
+  .album__info,
+.album__items,
+.album__title,
+.album__info_desc {
+    margin-right: 27px;
+    margin-left: 27px;
+  }
+  .album__title {
+    padding-left: 0%;
+    font-size: 23px;
+  }
+  .buy__btn {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding-left: 0;
+  }
+}
+@media (max-width: 1022.98px) {
+  .download__btn_two,
+.album__title_two,
+.album__info_desc {
+    display: none;
+  }
+  .album-container {
+    height: 60vh;
+  }
+}
