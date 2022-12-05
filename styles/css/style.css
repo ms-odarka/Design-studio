@@ -2372,6 +2372,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .basket-buy_btn {
@@ -2381,10 +2385,15 @@ body {
   color: #FFFFFF;
   border: none;
   margin-bottom: 19px;
+  cursor: pointer;
 }
 
 .light-brown {
   background-color: #BD7048;
+}
+
+.light-brown:hover {
+  background-color: #a9633e;
 }
 
 .orange {
@@ -2392,8 +2401,16 @@ body {
   color: #BD7048;
 }
 
+.orange:hover {
+  background-color: rgb(255, 208, 173);
+}
+
 .red {
   background-color: #F14635;
+}
+
+.red:hover {
+  background-color: rgb(227, 53, 27);
 }
 
 .basket-buy_comment {
@@ -2406,6 +2423,7 @@ body {
 
 .basket-buy__link {
   color: #BD7048;
+  text-decoration: none;
 }
 
 .basket_desktop_comment {
@@ -2686,5 +2704,192 @@ body {
     grid-column: 1/2;
     grid-row: 4/5;
     padding-left: 0;
+  }
+}
+@media (max-width: 1120px) {
+  .tender-container {
+    height: 60vh;
+  }
+}
+.budgeting {
+  margin-bottom: 65px;
+}
+
+.budgeting__title_two {
+  font-family: "Montserrat Alternates";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-left: 135px;
+  color: #262626;
+}
+
+.download__btn_two {
+  margin-left: 135px;
+}
+
+.budgeting-container {
+  background: url("/assets/images/budgeting_background.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 55px;
+}
+
+.budgeting__title {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
+  padding: 0 0 40px 135px;
+}
+
+.budgeting__info {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(38, 38, 38, 0.7);
+  margin: 0 135px 60px 135px;
+}
+
+.budgeting-price__info {
+  display: flex;
+  align-items: center;
+}
+
+.budgeting-price__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(38, 38, 38, 0.7);
+  margin-right: 30px;
+}
+
+.budgeting__price {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #BD7048;
+}
+
+.budgeting__items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 135px 0 135px;
+}
+.budgeting__buttons {
+  display: flex;
+  align-items: center;
+}
+.budgeting__btn {
+  background-color: #BD7048;
+  color: #262626;
+}
+
+.budgeting__btn:hover {
+  background-color: #a9633e;
+}
+
+.buy__btn {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #BD7048;
+  background-color: #FFFFFF;
+}
+
+.buy__btn:hover {
+  background-color: #FFFFFF;
+}
+
+.budgeting-price__text {
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(59, 59, 59, 0.5);
+}
+
+.budgeting__price {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #262626;
+}
+
+@media (min-width: 455px) {
+  .more__title {
+    text-align: start;
+    margin-left: 135px;
+    margin-right: 135px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1119.98px) {
+  .more-features-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 135px 0px 135px;
+  }
+}
+@media (max-width: 722px) {
+  .budgeting__buttons {
+    display: contents;
+  }
+  .budgeting-price__info {
+    display: contents;
+  }
+  .budgeting__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: start;
+  }
+  .budgeting-price__text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .budgeting__price {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .budgeting__btn {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .buy__btn {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+@media (max-width: 500px) {
+  .budgeting__info,
+.budgeting__items,
+.budgeting__title {
+    margin-right: 27px;
+    margin-left: 27px;
+  }
+  .budgeting__title {
+    padding-left: 0%;
+    font-size: 23px;
+  }
+  .buy__btn {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding-left: 0;
+  }
+}
+@media (max-width: 1022.98px) {
+  .download__btn_two,
+.budgeting__title_two {
+    display: none;
+  }
+  .budgeting-container {
+    height: 60vh;
   }
 }

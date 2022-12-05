@@ -1,12 +1,24 @@
 @import './colors';
 @import './mixins';
 
-.tender {
+.budgeting {
     margin-bottom: 65px;
 }
 
-.tender-container {
-    background: url('/assets/images/brigades_tender_background.png');
+
+.budgeting__title_two {
+    @include Montserrat-Alternates (700, 30px, 37px);
+    margin-left: 135px;
+    color: $black;
+
+}
+
+.download__btn_two {
+    margin-left: 135px;
+}
+
+.budgeting-container {
+    background: url('/assets/images/budgeting_background.png');
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -16,24 +28,24 @@
     margin-bottom: 55px;
 }
 
-.tender__title {
+.budgeting__title {
     @include Montserrat-Alternates (600, 30px, 37px);
     color: $white;
     padding: 0 0 40px 135px;
 }
 
-.tender__info {
+.budgeting__info {
     @include Montserrat-Alternates (400, 20px, 24px);
     color: $black-desc;
     margin: 0 135px 60px 135px
 }
 
-.tender-price__info {
+.budgeting-price__info {
     display: flex;
     align-items: center;
 }
 
-.tender-price__text {
+.budgeting-price__text {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -41,16 +53,16 @@
     margin-right: 30px;
 }
 
-.tender__price {
+.budgeting__price {
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
     color: #BD7048;
 }
 
-.tender {
+.budgeting {
 
-    // .tender__items
+    // .budgeting__items
 
     &__items {
         display: flex;
@@ -58,14 +70,14 @@
         margin: 0 135px 0 135px;
     }
 
-    // .tender__buttons
+    // .budgeting__buttons
 
     &__buttons {
         display: flex;
         align-items: center;
     }
 
-    // .tender__btn
+    // .budgeting__btn
 
     &__btn {
         background-color: $light-brown;
@@ -74,7 +86,7 @@
 
 }
 
-.tender__btn:hover {
+.budgeting__btn:hover {
     background-color: $brown;
 }
 
@@ -95,9 +107,9 @@
 }
 
 
-.tender-price {
+.budgeting-price {
 
-    // .tender-price__text
+    // .budgeting-price__text
 
     &__text {
         @include Montserrat-Alternates (500, 20px, 24px);
@@ -105,7 +117,7 @@
     }
 }
 
-.tender__price {
+.budgeting__price {
     @include Montserrat-Alternates (600, 30px, 37px);
     color: $black;
 }
@@ -127,32 +139,32 @@
 
 @media (max-width: 722px) {
 
-    .tender__buttons {
+    .budgeting__buttons {
         display: contents;
     }
 
-    .tender-price__info {
+    .budgeting-price__info {
         display: contents;
     }
 
-    .tender__items {
+    .budgeting__items {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 1fr);
         justify-items: start;
     }
 
-    .tender-price__text {
+    .budgeting-price__text {
         grid-column: 1/2;
         grid-row: 1/2;
     }
 
-    .tender__price {
+    .budgeting__price {
         grid-row: 2/3;
         grid-column: 1/2;
     }
 
-    .tender__btn {
+    .budgeting__btn {
         grid-row: 3/4;
         grid-column: 1/2;
     }
@@ -165,14 +177,14 @@
 
 @media (max-width: 500px) {
 
-    .tender__info,
-    .tender__items,
-    .tender__title {
+    .budgeting__info,
+    .budgeting__items,
+    .budgeting__title {
         margin-right: 27px;
         margin-left: 27px;
     }
 
-    .tender__title {
+    .budgeting__title {
         padding-left: 0%;
         font-size: 23px;
     }
@@ -182,11 +194,16 @@
         grid-row: 4/5;
         padding-left: 0;
     }
-
 }
 
-@media (max-width: 1120px) {
-    .tender-container {
+@media (max-width: 1022.98px) {
+
+    .download__btn_two,
+    .budgeting__title_two {
+        display: none;
+    }
+
+    .budgeting-container {
         height: 60vh;
     }
 }
