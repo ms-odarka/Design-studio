@@ -1,0 +1,185 @@
+@import './colors';
+@import './mixins';
+
+.tender {
+    margin-bottom: 65px;
+}
+
+.tender-container {
+    background: url('/assets/images/brigades_tender_background.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 55px;
+}
+
+.tender__title {
+    @include Montserrat-Alternates (600, 30px, 37px);
+    color: $white;
+    padding: 0 0 40px 135px;
+}
+
+.tender__info {
+    @include Montserrat-Alternates (400, 20px, 24px);
+    color: $black-desc;
+    margin: 0 135px 60px 135px
+}
+
+.tender-price__info {
+    display: flex;
+    align-items: center;
+}
+
+.tender-price__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(38, 38, 38, 0.7);
+    margin-right: 30px;
+}
+
+.tender__price {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #BD7048;
+}
+
+.tender {
+
+    // .tender__items
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 135px 0 135px;
+    }
+
+    // .tender__buttons
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    // .tender__btn
+
+    &__btn {
+        background-color: $light-brown;
+        color: $black;
+    }
+
+}
+
+.tender__btn:hover {
+    background-color: $brown;
+}
+
+
+.buy {
+
+    // .buy__btn
+
+    &__btn {
+        @include Montserrat-Alternates (600, 15px, 18px);
+        color: $light-brown;
+        background-color: $white;
+    }
+}
+
+.buy__btn:hover {
+    background-color: $white;
+}
+
+
+.tender-price {
+
+    // .tender-price__text
+
+    &__text {
+        @include Montserrat-Alternates (500, 20px, 24px);
+        color: $light-black;
+    }
+}
+
+.tender__price {
+    @include Montserrat-Alternates (600, 30px, 37px);
+    color: $black;
+}
+
+@media (min-width: 455px) {
+    .more__title {
+        text-align: start;
+        margin-left: 135px;
+        margin-right: 135px;
+    }
+}
+
+@media (min-width:600px) and (max-width: 1119.98px) {
+    .more-features-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 135px 0px 135px;
+    }
+}
+
+@media (max-width: 722px) {
+
+    .tender__buttons {
+        display: contents;
+    }
+
+    .tender-price__info {
+        display: contents;
+    }
+
+    .tender__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        justify-items: start;
+    }
+
+    .tender-price__text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .tender__price {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .tender__btn {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .buy__btn {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .tender__info,
+    .tender__items,
+    .tender__title {
+        margin-right: 27px;
+        margin-left: 27px;
+    }
+
+    .tender__title {
+        padding-left: 0%;
+        font-size: 23px;
+    }
+
+    .buy__btn {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding-left: 0;
+    }
+}
